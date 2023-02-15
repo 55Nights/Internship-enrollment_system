@@ -1,0 +1,114 @@
+body{
+
+    width: 1000px;
+    margin: auto;
+    color: rgb(0, 0, 0);
+}
+header{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    padding-left: 1em;
+}
+.hero-section{
+    padding: 1.5em;
+    height: 80vh;
+    background-image: url(./assets/index/Hero-section.png);
+    background-position: center;
+    background-size: cover;
+
+}
+h1{
+    font-family: 'Tropikal';
+    font-size: 2.369rem;
+}
+.logo{
+    font-family: 'Koffins';
+}
+.call-to-action{
+    padding-bottom: 10em;
+    padding-left: 2em;
+    padding-top: 3em;
+}
+.hero-header{
+    padding-top: 5em;
+    padding-left: 1em;
+}
+.sub-header{
+    padding-left: 2.5em;
+    width: 50%;
+}
+.student, .organization{
+    padding: 1em;
+   margin-left: 1em;
+}
+/*About*/
+.abt{
+    margin-top: 1em;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.abt img{
+    height: 50vh;
+    
+    object-fit: contain;
+    object-position: center;
+    margin-right: 1em;
+}
+.more-info {
+    padding: 0.5em;
+}
+.more-info h4{
+  margin-top: 1em;
+}
+.more-info ul{
+    margin-left: 1.5em;
+    list-style: disc;
+}
+.more-info li{
+    list-style: disc;
+}
+
+footer{
+    padding-top: 3em;
+    height: 50vh;
+    background-color: black;
+    color: white;
+}
+.footer-info{
+    margin: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+footer nav ul{
+    display: block;
+}
+.socials{
+    position: relative;
+    left: 50%;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+.copyright{
+    position: relative;
+    top: 35%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.line{
+    width: 400px;
+    height: 2px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+}

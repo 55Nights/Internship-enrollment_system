@@ -1,0 +1,27 @@
+
+:root{
+    --Tropikal: 'Tropikal'
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 0.95rem;
+    text-decoration: none;
+    list-style: none;
+
+}
+@font-face {
+    font-family: var(--Tropikal);
+    src: url("./fonts/tropikal-bold.otf");
+}
+@font-face {
+    font-family: 'Koffins';
+    src: url("./fonts/Koffins.otf");
+}
+
+.tp_H4{
+    font-family: var(--Tropikal);
+    font-size: 1.333rem;
+}
