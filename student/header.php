@@ -9,16 +9,3 @@
     <link rel="stylesheet" href="student.css">
     <title>Document</title>
 </head>
-<body class="body-login">
-    
-        <form action="">
-            <input type="email" name="email" id="email" 
-            placeholder="studentid@students.uni" required><br>
-            <input type="password" name="password" 
-            placeholder="password" id="pwd" required>
-            <br>
-            <button><a href="./profile.html">Log In</a></button>
-        </form>
-   
-</body>
-</html>
