@@ -92,7 +92,7 @@
 }
 
 /*************************PROFILE STYLES****************************************/
-main {
+.main-about {
     position: relative;
     width: 85%;
 }
@@ -174,4 +174,90 @@ margin-bottom: 2em;
 .about-pic{
     display: flex;
     justify-content: space-between;
+}
+
+/*******************HOME*********************************************/
+/***utilities***/
+.welcome-profile{
+    display: inline-flex;
+    align-items: center;
+}
+
+.welcome-info{
+    margin-left: 2em;
+    font-size: small;
+}
+.role{
+    margin-top: .2em;
+    font-weight: 200;
+    font-size: .9rem;
+}
+.location{
+    font-weight: 100;
+    font-size: .8rem;
+}
+.internship{
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.recommend{
+margin-top: 2em;
+}
+.recommend-info{
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 39.0469px 185.473px;
+gap: 19.52px;
+
+width: 779.44px;
+height: 423.96px;
+
+background: #FFFFFF;
+border: 0.750903px solid #000000;
+box-shadow: 2.25271px 2.25271px 16.5199px -0.750903px rgba(0, 0, 0, 0.25);
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.recommend-info a {
+    display: flex;
+flex-direction: row;
+padding: 16.5199px;
+gap: 7.51px;
+color: #FFFFFF;
+
+
+background: #000000;
+border: 0.750903px solid #000000;
+box-shadow: 2.25271px 2.25271px 16.5199px -0.750903px rgba(0, 0, 0, 0.25);
+border-radius: 3.75451px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+.recommend p{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18.0217px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
 }
