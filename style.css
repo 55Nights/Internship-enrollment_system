@@ -20,7 +20,10 @@
     font-family: 'Koffins';
     src: url("./fonts/Koffins.otf");
 }
-
+@font-face {
+    font-family: 'MT';
+    src: url("./fonts/BodoniMT.ttf");
+}
 .tp_H4{
     font-family: var(--Tropikal);
     font-size: 1.333rem;
@@ -31,4 +34,8 @@
 .tp {
     font-family: var(--Tropikal);
     font-size: 1.3rem;
+}
+.MT{
+    font-family: 'MT';
+    font-weight: 300;
 }
