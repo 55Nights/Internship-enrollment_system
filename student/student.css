@@ -261,3 +261,126 @@ flex: none;
 order: 0;
 flex-grow: 0;
 }
+
+
+/********************JOB STYLES****************************************/
+.job-main{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: auto;
+    margin-left: -5%;
+    text-align: center;
+    width: 60%;
+    border: 2px solid;
+    
+}
+.filters{
+    display: flex;
+    margin-top: 3em;
+    justify-content: center;
+}
+.filter{
+    margin-right: 2em;
+    background: #D8D8D8;
+border-radius: 2px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: .3em .9em;
+gap: 14.3px;
+color: #733FF5;
+}
+.jobs{
+    margin-top: 2em;
+    margin-left: 5em;
+    padding: 1em;
+    width: 70%;
+    background: rgba(243, 255, 246, 0.17);
+}
+.job{
+    margin-top: 1em;
+    padding: 1em;
+    border: 2px solid rgba(182, 182, 182, 0.527);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 6px;
+    box-shadow: 1.5px 1.5px 10px -0.750903px rgba(153, 153, 153, 0.25);
+}
+.job-profile{
+    display: flex;
+}
+.job-profile img{
+    width: 70px;
+height: 57px;
+filter: drop-shadow(0px 3.20881px 3.20881px rgba(0, 0, 0, 0.25));
+border-radius: 4.04747px;
+object-position: center;
+object-fit: cover;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.job-profile-info{
+    margin-top: 1em;
+    margin-left: 1em;
+   text-align: left;
+}
+.job-profile-info p{
+    font-weight: lighter;
+    font-size: 0.7rem;
+}
+.job-status{
+    display: inline-flex;
+    margin-top: 1em;
+    padding: .25em;
+    border: 1px solid ;
+    border-radius: 5px;
+    
+}
+.job-status img{
+    margin-right: .5em;
+}
+.job-status p{
+    font-size: .8em;
+}
+.job-description{
+    border: 2px solid ;
+    display: flex;
+align-items: flex-start;
+padding: 1em;
+gap: 6.92px;
+margin-top: 1em;
+/* Inside auto layout */
+width: 100%;
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+.job-title{
+    font-weight: bold;
+}
+.job-location{
+    font-weight: lighter;
+    font-size: .8em;
+}
+.job-salary{
+    font-weight: bold;
+}
+.job-date{
+    font-size: .8em;
+}
+.job-description a{
+    border: 1px solid black;
+    padding: 0.5em .9em;
+    margin-left: 1em;
+
+}
+.job-buttons{
+    margin-left: 2em;
+
+}
