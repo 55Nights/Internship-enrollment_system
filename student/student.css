@@ -4,6 +4,9 @@
     height: 80vh;
     background-image: url(./assets/students/signup.png);
 }
+.bodoni{
+    font-family: 'Bodoni Moda', serif;
+}
 .body-login form{
    position: relative;
    top: 50%;
@@ -40,14 +43,16 @@
 }
 /***************Side Menu********************/
 .logo{
+
     margin: 3em;
     margin-left: 2em;
+   
     
 }
 .sidemenu{
     width: 20%;
     margin-top: 3rem;
-   
+    position: fixed;
     filter:  drop-shadow(16px 16px 10px rgba(204, 204, 204, 0.253));
 
 }
@@ -268,11 +273,14 @@ flex-grow: 0;
     padding-top: 1em;
     padding-bottom: 1em;
     margin: auto;
-    margin-left: -5%;
+    margin-left: 10%;
     text-align: center;
     width: 60%;
     border: 2px solid;
     
+}
+main{
+    margin-left: 20%;
 }
 .filters{
     display: flex;
@@ -349,10 +357,11 @@ flex-grow: 0;
     font-size: .8em;
 }
 .job-description{
-    border: 2px solid ;
+    border: 1px solid ;
     display: flex;
+    justify-content: space-between;
 align-items: flex-start;
-padding: 1em;
+padding: 1.5em;
 gap: 6.92px;
 margin-top: 1em;
 /* Inside auto layout */
@@ -383,4 +392,80 @@ flex-grow: 0;
 .job-buttons{
     margin-left: 2em;
 
+}
+.black {
+    background-color: #000000;
+    color: white;
+}
+
+/*********************JOB DESCRIPTION MODULE********/
+.job-desc{
+    background: #e9e9e93f;
+}
+.desc{
+    margin: 10em auto;
+    width: 60%;
+    display: flex;
+}
+aside{
+    background: #D9D9D9;
+    padding: 2em;
+}
+aside .job-profile{
+margin-bottom: 1em;
+}
+aside h5{
+    margin-top: 1em;
+}
+aside p, li{
+    font-size: .8em;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.desc main{
+    background-color: #FFFFFF;
+    width: 90%;
+    margin-left: 0%;
+    padding: 2em;
+}
+.hr { 
+    margin-top: -1.5em;
+}
+.app-profile {
+    margin-bottom: 1em;
+}
+
+.hire p{
+    font-size: .6em;
+    margin-bottom: 5em;
+}
+.hire button{
+   padding: .5em 1em;
+   color: #FFFFFF;
+   background-color: #000000;
+   margin-left: 1em;
+   
+}
+.hire-buttons{
+    margin-left: 80%;
+    margin-top: 2em;
+}
+.hire-contact{
+    display: flex;
+    justify-content: space-between;
+}
+.hire-contact img{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: -3px 0px -3px  0px 10px 1px ;
+}
+.hire textarea{
+    width: 100%;
+    margin-top: 1em;
+}
+.app{
+    display: flex;
+    justify-content: space-between;
 }
