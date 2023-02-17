@@ -500,3 +500,116 @@ margin-right: 1em;
 .paragraph{
     margin-top: 2em;
 }
+
+/*************************Messages**************************************************/
+.messages{
+    margin-top: 1em;
+    
+    background-image: url(./assets/students/message-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    height: 80vh;
+    width: 50%;
+    padding: 1em;
+}
+.message{
+    display: flex;
+   padding: 1em;
+   margin-bottom: 1em;
+   border-radius: 6px;
+   background-color: #f9f6ff ; 
+     box-shadow: 30x 4px 4px  12px black;
+   width: 80%;
+}
+.message-body{
+    margin-left: 1em;
+}
+.message-body .student-name{
+    font-weight: bolder;
+}
+
+
+/***************CHAT STYLES**********************************/
+.contain-chat{
+    margin:2em auto;
+   height: 90vh;
+   width: 30%;
+}
+.chat-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+    gap: 70px;
+    box-shadow:(00px 100px 100px 100px rgba(0, 0, 0, 1));
+    margin-bottom: 1em;
+}
+.chat-body{
+    height: 80%;
+    padding: 1em;
+    background: rgba(229, 229, 230, 0.49);
+border: 0.387975px solid #E9E9E9;
+box-shadow: 0px 4.92584px 7px 27px rgba(255, 255, 255, 0.38);
+border-radius: 6.29187px;
+overflow-y: scroll;
+scroll-behavior: smooth;
+margin-bottom: .5em;
+}
+.sent-message{
+    position: relative;
+    right: -50%;
+    padding: .5em;
+    background: #733FF5;
+    color: #ffffffd2;
+    margin: 1em 0em;
+box-shadow: 0px 1.5519px 1.5519px rgba(0, 0, 0, 0.25);
+border-radius: 11.6392px 11.6392px 0px 11.6392px;
+width: 50%;
+}
+.recieved-message{
+    border: 0.691471px solid #000000;
+filter: drop-shadow(0px 1.5519px 1.5519px rgba(0, 0, 0, 0.25));
+border-radius: 11.6392px 11.6392px 11.6392px 0px;
+width: 50%;
+padding: .5em;
+margin: 1em 0em;
+}
+.input form{
+   
+    display: flex;
+    justify-content: space-between;
+    padding: .2em;
+    width: 100%;
+    background-color: #733FF5;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
+
+   
+
+}
+.input input{
+  padding: 1em;
+  width: 70%;
+  border: none;
+  background-color: #f1f1f1;
+
+}
+.input-icons{
+    margin-top: .5em;
+    width: 25%;
+    padding: .1em;
+    display: flex;
+    justify-content: space-between;
+}
+.input-icons img, button{
+
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.input-icons button{
+    border: none;
+    background-color: white;
+}
