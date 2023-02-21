@@ -35,7 +35,14 @@ h1{
     padding-bottom: 10em;
     padding-left: 2em;
     padding-top: 3em;
+    display: flex;
 }
+.call-to-action a{
+    display: block;
+    padding: 1em;
+    
+}
+
 .hero-header{
     padding-top: 5em;
     padding-left: 1em;
@@ -44,9 +51,15 @@ h1{
     padding-left: 2.5em;
     width: 50%;
 }
-.student, .organization{
+.student {
+    background-color: black;
+   color: rgb(255, 255, 255);
+}
+.organization{
     padding: 1em;
    margin-left: 1em;
+   background-color: blueviolet;
+   color: white;
 }
 /*About*/
 .abt{
@@ -93,12 +106,13 @@ footer nav ul{
 }
 .socials{
     position: relative;
-    left: 50%;
+    left: 35%;
     width: 30%;
     display: flex;
     justify-content: space-between;
     margin-top: 3em;
 }
+
 .copyright{
     position: relative;
     top: 35%;
