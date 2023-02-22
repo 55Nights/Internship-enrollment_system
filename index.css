@@ -17,6 +17,7 @@ nav ul li{
     padding-left: 1em;
 }
 .hero-section{
+    margin-top: 2em;
     padding: 1.5em;
     height: 80vh;
     background-image: url(./assets/index/Hero-section.png);
