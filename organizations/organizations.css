@@ -76,6 +76,9 @@
 .sign-option p{
     margin-left: 1em;
 }
+.sign-option img{
+    width: 20px;
+}
 
 
 /*Applicants*/
