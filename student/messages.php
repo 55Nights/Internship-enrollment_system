@@ -1,50 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="student.css">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <title>STUDENT | Jobs</title>
-</head>
-<body class="profile-body">
-    <p class="logo">InternQuest</p>
-</section>
-    <div class="container">
-        <section class="sidemenu">
-            <section class="icon">
-                <img src="./assets/students/home.png" alt="">
-                <a href="./home.html" class="nav">Home</a>
-            </section>
-            <section class="icon">
-                <img src="./assets/students/Job.png" alt="">
-                <a href="./job.html" class="nav">job</a>
-            </section>
-            <section class="icon">
-                <img src="./assets/students/messages.png" alt="">
-                <a href="./messages.html" class="nav">Messages</a>
-            </section>
-            <section class="icon">
-                <img src="./assets/students/community.png" alt="">
-                <a href="./community.html" class="nav">community</a>
-            </section>
-            <section class="icon">
-                <img src="./assets/students/Mentor.png" alt="">
-                <a href="./home.html" class="nav">Mentors</a>
-            </section>
-            <section class="icon">
-                <img src="./assets/students/post.png" alt="">
-                <a href="./new-post.html" class="nav">New post</a>
-            </section>
-        </section>
-        </div>
+<?php
+require("./header.php")
+?>
         <main>
             <h3>Your conversations</h3>
             
             <div class="messages">
-                <a href="./chat.html"><div class="message">
+                <a href="./chat.php"><div class="message">
                     <div class="dp" style="width: 40px; height: 40px;"></div>
                     <div class="message-body">
                         <p class="student-name">Henry Ngata</p>

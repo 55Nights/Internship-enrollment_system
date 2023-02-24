@@ -12,7 +12,7 @@
 </head>
 <body class="body-login">
     
-        <form action="" method="post">
+        <form action="./profile.php" method="post">
             <input type="email" name="email" id="email" 
             placeholder="studentid@students.uni" required><br>
             <input type="password" name="password" 

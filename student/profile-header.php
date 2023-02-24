@@ -7,60 +7,46 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="student.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <title>STUDENT | Jobs</title>
+    <title>STUDENT | update your profile</title>
 </head>
 <body class="profile-body">
     <p class="logo">InternQuest</p>
 </section>
     <div class="container">
         <section class="sidemenu">
-            <section class="profile-name">
+            <!--<section class="profile-name">
                 <div class="dp"></div>
                 <p class="student-name tp">Henry Ngata</p>
             </section>
+        -->
             <section class="menu">
+                
                 <section class="icon">
                     <img src="./assets/students/home.png" alt="">
-                    <a href="./home.html" class="nav">Home</a>
+                    <a href="./home.php" class="nav">Home</a>
                 </section>
                 <section class="icon">
                     <img src="./assets/students/Job.png" alt="">
-                    <a href="./job.html" class="nav">job</a>
+                    <a href="./job.php" class="nav">job</a>
                 </section>
                 <section class="icon">
                     <img src="./assets/students/messages.png" alt="">
-                    <a href="./messages.html" class="nav">Messages</a>
+                    <a href="./messages.php" class="nav">Messages</a>
                 </section>
                 <section class="icon">
                     <img src="./assets/students/community.png" alt="">
-                    <a href="./community.html" class="nav">community</a>
+                    <a href="./community.php" class="nav">community</a>
                 </section>
+                <!--
                 <section class="icon">
                     <img src="./assets/students/Mentor.png" alt="">
                     <a href="./home.html" class="nav">Mentors</a>
                 </section>
+-->
                 <section class="icon">
                     <img src="./assets/students/post.png" alt="">
-                    <a href="./new-post.html" class="nav">New post</a>
+                    <a href="./new-post.php" class="nav">New post</a>
+                </section>
                 </section>
         </section>
-        </div>
-        <main>
-            <h3>Write a new post</h3>
-            <form action="" class="posting">
-            <div class="post-area">
-        
-                <div class="new-post">
-                    <h4 class="MT">Heading</h4>
-                    <input type="text" name="" id="newpost">
-                </div>
-                <div class="new-post">
-                  <h4 class="MT">body</h4>
-                  <textarea name="" id="bodypost" cols="30" rows="10"></textarea>
-                </div>
-            </div>
-            <button type="submit" class="postings">post</button>
-            </form>
-        </main>
-            </body>
-            </html>
+    </div>

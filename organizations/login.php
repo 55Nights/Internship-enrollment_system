@@ -12,7 +12,7 @@
 </head>
 <body class="main-login">
     <section class="login" style="margin-left: 15em;">
-        <form action="">
+        <form action="./company-profile.php" method="post">
         <input type="email" name="" id="" placeholder="email">
         <input type="password" name="" id="" placeholder="password">
         <button type="submit" value="submit">Submit</a></button>
@@ -33,11 +33,11 @@
         </form>
     </section>
     <section class="login">
-        <form action="./applicants.html" method="post">
+        <form action="./company-profile.php" method="post">
             <input type="email" name="" id="" placeholder="email">
             <input type="password" name="" id="" placeholder="password">
             <input type="password" name="" id="" placeholder="comfirm password">
-            <button type="submit" value="submit"><a href="./home.html">Submit</a></button>
+            <button type="submit" value="submit">Submit</button>
             <span style="display: block; margin-left: 5em; margin-top: 1em; font-weight: bolder;">or</span>
         <div class="sign-option">
             <img src="./assets/google.png" alt="google logo">

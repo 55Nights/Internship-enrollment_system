@@ -14,8 +14,14 @@ require("./header.php");
                     <p>Your jobs</p>
                     <a href="./job.html">Post New Job</a>
                 </section>
-                <section  style="margin-bottom: 5em;">
-                    <iframe src="./messages.php #meso" frameborder="0"></iframe>
+            </section>
+                <section class="recommend"  style="margin-bottom: 5em;">
+                <p>Messages</p>
+                <section class="recommend-info">
+                    <img src="./assets/messi.png" alt="illustration of a person">
+                    <p>No messages</p>
+                   
+                </section>
             </section>
         </main>
         </div>

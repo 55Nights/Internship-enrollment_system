@@ -17,17 +17,14 @@
 <main>
             <h3>Company Profile</h3>
             <hr>
-            <form action="" method="post">
+            <form action="./home.php" method="post">
             <div class="contain">
                 <section class="about-info">
                     <h4>Company Name</h4>
                     <p>This will be the company's public profile</p>
                 </section>
                 <section class="about-text">
-                      
-                        <input type="text" name="" id="" placeholder="E.g Google"><br>
-                       
-                    </form>
+                    <input type="text" name="" id="" placeholder="E.g Google">
                 </section>
             </div>
             <hr>
@@ -102,7 +99,7 @@
                 </section>
             </div>
             <hr>
-            <button type="submit" class="button-profile"><a href="./home.html">update profile</a></button>
+            <button type="submit" class="button-profile">update profile</button>
         </form>
         </main>
         </body>
