@@ -91,7 +91,7 @@
     
 }
 .app-card{
-    border: .1px solid gainsboro;
+    border: .1px solid rgb(220, 220, 220);
     height: 320px;
     width: 100%;
     filter: drop-shadow(0px 2.47419px 2.47419px rgba(0, 0, 0, 0.25));
@@ -122,11 +122,35 @@
    border-radius: 4px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /** Information*/
+
+
+
+
 .contain-information{
     width: 50%;
     margin: auto;
-    background-color: rgba(228, 228, 228, 0.192);
+    background-color: rgba(137, 43, 226, 0.116);
 }
 .banner{
     margin-top: 5em;
@@ -149,6 +173,7 @@
 }
 .Bio h4{
     margin-bottom: .5em;
+    color: rgb(88, 91, 255);
 }
 .Bio p{
     margin-left: 1em;
@@ -172,11 +197,79 @@
     border: none;
     width: 45%;
     height: 40px;
-    background-color: black;
+    background-color: blueviolet;
     color: white;
     border-radius: 3px;
 }
 .banner-buttons .reject{
     background-color: red;
    
+}
+.urls{
+    width: 60%;
+display: flex;
+align-items: center;
+}
+.urls p{
+   padding-top: 1em;
+   margin-left: 2em;
+   color: rgb(166, 71, 255);
+}
+.urls .url-icon p{
+    margin-left: 1em;
+    padding: 0;
+    color: black;
+}
+
+
+/*****Messages**********************************/
+iframe {
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+/***New Job ***/
+.radio {
+    margin-left: -10em;
+    padding: 0;
+  text-align: center;
+
+    
+}
+.radio input{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 2%;
+}
+.radio label{
+    position: relative;
+    margin-left: .3em;
+    margin-right: 2em;
+    bottom: 1.2em;
+    display: inline-block;
+   
+   
+}
+.button-profile{
+        position: relative;
+        padding: 20px 31px;
+        color: white;
+        margin-top: 4em;
+        margin-bottom: 20%;
+        left: 80%;
+        background: #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        margin-bottom: 2em;
+        width: 15%;
+        height: 10%;
+    
 }

@@ -13,30 +13,8 @@
 <body class="profile-body">
     <p class="logo">InternQuest</p>
 </section>
-    <div class="container">
-        <section class="sidemenu">
-             <section class="menu">
-                 <section class="icon">
-                     <img src="../student/assets/students/home.png" alt="">
-                     <a href="./home.html" class="nav">Dashboard</a>
-                 </section>
-                 <section class="icon">
-                     <img src="../student/assets/students/Job.png" alt="">
-                     <a href="./job.html" class="nav">New</a>
-                 </section>
-                 <section class="icon">
-                     <img src="../student/assets/students/messages.png" alt="">
-                     <a href="./messages.html" class="nav">Messages</a>
-                 </section>
-                 
-                 <section class="icon">
-                     <img src="../student/assets/students/Mentor.png" alt="">
-                     <a href="./home.html" class="nav">Applicants</a>
-                 </section>
- 
-             </section>
-        </div>
-        <main>
+   
+<main>
             <h3>Company Profile</h3>
             <hr>
             <form action="" method="post">

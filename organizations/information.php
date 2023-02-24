@@ -52,10 +52,34 @@
         </div>
         <div class="Bio">
             <h4 class="tp">Social Profiles</h4>
-            <p>Twitter</p>
-            <p>Twitter</p>
-            <p>Twitter</p>
-            <p>Twitter</p>
+            <div class="urls">
+                            <div class="url-icon">
+                                <img src="../student/assets/students/google.png" alt="">
+                                <p>Website</p>
+                            </div>
+                           <p>N/A</p>
+                        </div>
+                        <div class="urls">
+                            <div class="url-icon">
+                                <img src="../student/assets/students/ggit.png" alt="">
+                                <p>github</p>
+                            </div>
+                          <p>N/A</p>
+                        </div>
+                        <div class="urls">
+                            <div class="url-icon">
+                                <img src="../student/assets/students/linked.png" alt="">
+                                <p>LinkedIn</p>
+                            </div>
+                           <p>N/A</p>
+                        </div>
+                        <div class="urls">
+                            <div class="url-icon">
+                                <img src="../student/assets/students/twitter.png" alt="">
+                                <p>Twiter</p>
+                            </div>
+                           <p>N/A</p>
+                        </div>        
         </div>
         <div class="Bio">
             <h4 class="tp">Cover Note</h4>

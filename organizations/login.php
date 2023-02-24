@@ -15,7 +15,7 @@
         <form action="">
         <input type="email" name="" id="" placeholder="email">
         <input type="password" name="" id="" placeholder="password">
-        <button type="submit" value="submit"><a href="./home.html">Submit</a></button>
+        <button type="submit" value="submit">Submit</a></button>
         <span style="display: block; margin-left: 5em; margin-top: 2em; font-weight: bolder;">or</span>
         <div class="sign-option">
             <img src="./assets/google.png" alt="google logo">

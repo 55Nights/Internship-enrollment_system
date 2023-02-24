@@ -1,55 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../student/student.css">
-    <link rel="stylesheet" href="organizations.css">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <title>STUDENT | Jobs</title>
-</head>
-<body class="profile-body">
-    <p class="logo">InternQuest</p>
-</section>
-    <div class="container">
-        <section class="sidemenu">
-            <div class="company-profile">
-            <div class="company-image">
- 
-            </div>
-             <div class="prof-info">
-                 <p>Google</p>
-                 <p>Making lives Better</p>
-             </div>
-            </div>
-             <section class="menu">
-                 <section class="icon">
-                     <img src="../student/assets/students/home.png" alt="">
-                     <a href="./home.html" class="nav">Dashboard</a>
-                 </section>
-                 <section class="icon">
-                     <img src="../student/assets/students/Job.png" alt="">
-                     <a href="./new-job.html" class="nav">New</a>
-                 </section>
-                 <section class="icon">
-                     <img src="../student/assets/students/messages.png" alt="">
-                     <a href="./messages.html" class="nav">Messages</a>
-                 </section>
-                 
-                 <section class="icon">
-                     <img src="../student/assets/students/Mentor.png" alt="">
-                     <a href="./home.html" class="nav">Applicants</a>
-                 </section>
- 
-             </section>
-             <section class="profile-name">
-                 <div class="dp"></div>
-                 <p class="student-name tp">Henry Ngata</p>
-             </section>
-             </section>
-    </div>
+<?php
+require("./header.php")
+?>
         <main>
             <h3>Job Details</h3>
             <hr>
@@ -81,13 +32,16 @@
         
                 </section>
                 <section class="about-text">
-                    <input type="radio" name="" id="internship">
-                    <label for="internship"> internship</label>
-                    <input type="radio" name="" id="parttime">
-                    <label for="parttime"> part time</label>
-                    <input type="radio" name="" id="fulltime">
-                    <label for="fulltime"> full time</label>
+                    <div class="radio">
+                        <input type="radio" name="jobtype" id="internship">
+                        <label for="internship"> internship</label>        
+                        <input type="radio" name="jobtype" id="parttime">
+                        <label for="parttime"> part time</label>
+                        <input type="radio" name="jobtype" id="fulltime">
+                        <label for="fulltime"> full time</label>
+                    </div>
             </div>
+            <hr>
             <div class="contain">
                 <section class="about-info">
                     <h4>Location </h4>
@@ -96,18 +50,21 @@
                 <section class="about-text">
                     <input type="text" name="" id="" placeholder="E.g Nairobi Kenya">
             </div>
+            <hr>
             <div class="contain">
                 <section class="about-info">
                     <h4>Hires </h4>
         
                 </section>
-                <section class="about-text">
-                    <input type="radio" name="" id="remote">
-                    <label for="remote"> remote</label>
-                    <input type="radio" name="" id="onsite">
-                    <label for="onsite"> onsite</label>
-                    <input type="radio" name="" id="hybrid">
-                    <label for="hybrid"> hybrid</label>
+                <section class="about-text" >
+                    <div class="radio">
+                        <input type="radio" name="hires" id="remote">
+                        <label for="remote"> remote</label>
+                        <input type="radio" name="hires" id="onsite">
+                        <label for="onsite"> onsite</label>
+                        <input type="radio" name="hires" id="hybrid">
+                        <label for="hybrid"> hybrid</label>
+                    </div>
             </div>
             <hr>
             <div class="contain">
@@ -142,7 +99,7 @@
                 </section>
             </div>
             <hr>
-            <button type="submit" class="button-profile"><a href="./home.html">update profile</a></button>
+            <button type="submit" class="button-profile"><a href="./home.html">Post Job</a></button>
         </form>
         </main>
         </body>
