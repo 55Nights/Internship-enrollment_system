@@ -11,7 +11,7 @@ require("./header.php")
                 </section>
                 <section class="about-text">
                       
-                        <input type="text" name="" id="" placeholder="E.g Frontend Development"><br>
+                        <input type="text" name="" id="" placeholder="E.g Frontend Development" value="Software Engneering"><br>
                        
                     </form>
                 </section>

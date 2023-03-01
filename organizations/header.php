@@ -43,9 +43,9 @@
                  </section>
  
              </section>
-             <section class="profile-name">
-                 <div class="dp"></div>
-                 <p class="student-name tp">Henry Ngata</p>
-             </section>
+             <section class="icon logout" style="margin-top: 6em;">
+                     <img src="./assets/exit.png" alt="">
+                     <a href="./applicants.php" class="nav">log out</a>
+                 </section>
         </section>
     </div>

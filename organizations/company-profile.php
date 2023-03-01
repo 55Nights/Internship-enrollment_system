@@ -41,6 +41,21 @@
             <hr>
             <div class="contain">
                 <section class="about-info">
+                    <h4>Industry</h4>
+                    <p>Which industry do you operate in</p>
+                </section>
+                <section class="about-text">
+                    <select name="industry" id="">
+                        <option value="computing">Computing and Information Technology</option>
+                        <option value="Housing">Housing</option>
+                        <option value="hospitality">hospitality</option>
+                        
+                    </select>
+                </section>
+            </div>
+            <hr>
+            <div class="contain">
+                <section class="about-info">
                     <h4>Company Logo</h4>
                     <p>company's mark</p>
                 </section>

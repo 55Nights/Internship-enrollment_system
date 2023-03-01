@@ -31,6 +31,7 @@
         </div>
         
         </form>
+        <a href="#">forgot password </a>
     </section>
     <section class="login">
         <form action="./company-profile.php" method="post">
@@ -52,6 +53,7 @@
             <p>Log in with twitter</p>
         </div>
         </form>
+        
     </section>
 </body>
 </html>

@@ -45,6 +45,10 @@
                     <img src="./assets/students/post.png" alt="">
                     <a href="./new-post.php" class="nav">New post</a>
                 </section>
+                <section class="icon logout" style="margin-top: 6em;">
+                     <img src="./assets/exit.png" alt="">
+                     <a href="./applicants.php" class="nav">log out</a>
+                 </section>
             </section>
         </section>
         </div>

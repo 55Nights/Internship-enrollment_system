@@ -43,7 +43,6 @@
 }
 /***************Side Menu********************/
 .logo{
-
     margin: 3em;
     margin-left: 2em;
    
@@ -664,4 +663,76 @@ margin: 1em 0em;
      color: #FFFFFF;
 
 
+}
+
+
+
+
+/*********************BRANDS******************/
+.job-options{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.job-options a{
+    font-size: 1.3em;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+.regular-jobs{
+    width: 40%;
+}
+.regular-jobs hr{
+   margin: 0;
+   border: 2px solid;
+   border-radius: 10px;
+   margin-bottom: 4em;
+}
+.listing{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.brand{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 30%;
+    margin-bottom: 2em;
+}
+.brand-logo{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: .6em;
+}
+.brand-logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: fill;
+    object-position: center;
+}
+.brand-name{
+    display: flex;
+}
+.brand-name img{
+   position: relative;
+   display: block;
+   width: 100%;
+   top: -.2em;
+   margin-left: .2em;
+   width: 15px;
+   height: 15px;
+}
+.brand-name p{
+   font-size: larger;
+   font-weight: bold;
+}
+.blur {
+    color: #d8d8d886;
+}
+.blur a{
+    color: #d8d8d886;
 }

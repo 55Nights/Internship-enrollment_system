@@ -31,6 +31,7 @@ h1{
 }
 .logo{
     font-family: 'Koffins';
+    border: 2px solid red;
 }
 .call-to-action{
     padding-bottom: 10em;

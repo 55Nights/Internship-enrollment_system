@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <title>STUDENT | update your profile</title>
 </head>
+<?php session_start();
+?>
 <body class="profile-body">
     <p class="logo">InternQuest</p>
 </section>

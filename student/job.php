@@ -13,6 +13,16 @@ require("./header.php")
                 <p class="filter">UI/UX</p>
                 <p class="filter">UI/UX</p>
             </div>
+            <div class="job-options">
+                <div class="regular-jobs">
+                    <a href="./job.php">New Uploads</a>
+                    <hr>
+                </div>
+                <div class="regular-jobs blur">
+                    <a href="./company-list.php">Companies</a>
+                    <hr>
+                </div>
+            </div>
             <div class="jobs">
                 <!--Jobs-->
              
