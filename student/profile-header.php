@@ -1,3 +1,14 @@
+<?php
+session_start();
+if(!isset($_SESSION['user_id'])) {
+  header("Location: signup.php");
+  exit();
+}
+
+$user = $_SESSION['user_id'];
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +20,11 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <title>STUDENT | update your profile</title>
 </head>
-<?php session_start();
-?>
+
 <body class="profile-body">
     <p class="logo">InternQuest</p>
 </section>
+<h1><?php echo $user?></h1>
     <div class="container">
         <section class="sidemenu">
             <!--<section class="profile-name">

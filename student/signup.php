@@ -14,19 +14,20 @@
 </head>
 <body class="body-login">
     
-        <form action="./inc/login.php" method="post"  id="login" >
+        <form action="./inc/signup.php" method="post"  id="signup" >
             <input type="email" name="email" id="email" 
             placeholder="studentid@students.uni" required><br>
             <p id="email-error"></p>
             <input type="password" name="password" 
-            placeholder="password" id="pwd" required>
+            placeholder="password" id="password" required>
             <br>
-           
-            <button type="submit" class="button-login" id="studentlogin">Log In</button>
+            <input type="password" name="pwd" 
+            placeholder=" confirm password" id="pwd" required>
+            <button type="submit" class="button-login" id="studentlogin">Sign Up</button>
         </form>
         <p id="pwd-error"></p>
         <a href="#">forgot password </a>
-        <a href="./signup.php">sign up </a>
-        <script src="./js/loin.js"></script>
+        <a href="./login.php">Login </a>
+        <script src="./js/signup.js"></script>
 </body>
 </html>

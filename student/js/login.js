@@ -1,31 +1,22 @@
 $(document).ready(function () {
-  $("#s_login").submit(function (event) {
+  $("#ln").submit(function (e) { 
+    e.preventDefault();
     var formData = {
-      password: $("#pwd").val(),
-      email: $("#email").val(),
+      'email': $('input[name=email]').val(),
+      'password': $('input[name=password]').val()
     };
 
+    // send the form data using AJAX
     $.ajax({
-      type: "POST",
-      url: "http://localhost/internship-enrollment_system/student/inc/login.php",
-      data: (formData),
-      encode: true,
-      headers: {  'Content-Type': 'application/x-www-form-urlencoded' },
-      success: function(response) {
-        // Handle the API response
-        if (response == 'success') {
-          // Login successful
-          window.location.href = "./profile.php";
-          $("#pwd-error").append(response);
-        } else {
-          // Login failed
-          $("#pwd-error").append(response);
-        }
-      }
+      type: 'POST',
+      url: 'login.php',
+      data: formData,
+      dataType: 'json',
+      encode: true
     })
-
-    event.preventDefault();
-    console.log("hello");
-   
+    .done(function(response) {
+      // handle the response from the server
+      console.log(response);
+    });
   });
 });

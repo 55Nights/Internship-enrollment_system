@@ -1,54 +1,86 @@
 <?php
 require("./db.php");
-$email = $_POST["email"];
-$password = $_POST["password"];
-$errors = [];
-$data = [];
+session_start();
 
-function checkEmailAndPassword() {
-  if(isset($_POST['email']) && isset($_POST['password'])) {
-    // email and password are set
-    return true;
-  } else {
-    // email and/or password are not set
-    return false;
-  }
+// check if email and password are set and not empty
+if (!isset($_POST['email']) || empty($_POST['email']) || !isset($_POST['password']) || empty($_POST['password'])) {
+  // if either field is missing, return an error message
+  $response = array('status' => 'error', 'message' => 'Email and password are required');
+  echo json_encode($response);
+  exit;
 }
-$bool =  checkEmailAndPassword();
 
-if ($bool == true)
-{
-  $stmt = $conn->prepare("SELECT * FROM students WHERE email = ?");
+// retrieve the form data
+$email = $_POST['email'];
+$password = $_POST['password'];
 
-    // Bind email parameter to the statement
-    $stmt->bind_param("s", $email);
+// validate the email address
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  // if the email address is invalid, return an error message
+  $response = array('status' => 'error', 'message' => 'Invalid email address');
+  echo json_encode($response);
+  exit;
+}
 
-    // Execute the statement
-    $stmt->execute();
+// validate the password (example: must be at least 8 characters long)
+if (strlen($password) < 4 ) {
+  // if the password is invalid, return an error message
+  $response = array('status' => 'error', 'message' => 'Password should be 8 characters long');
+  echo json_encode($response);
+  exit;
+}
 
-    // Get the result of the statement
-    $result = $stmt->get_result();
+// if the data is valid, perform the login process
+// ...
 
-    // Check if the email exists in the database
-    if ($result->num_rows > 0) {
-      echo "success";
-      // Email exists in the database, do whatever you need to do here
-      // For example, you could check if the password is correct by comparing it to the hashed password in the database
-      // If the password is correct, you could log the user in and redirect them to a dashboard page
-      // If the password is incorrect, you could display an error message to the user
-    } else {
-      // Email does not exist in the database, display an error message to the user
-      echo "Fail";
-    }
+// return a success message
+//$response = array('status' => 'success', 'message' => 'Login for isset successful');
+//echo json_encode($response);
+//exit;
+//
+//$email = mysqli_real_escape_string($conn, $email);
+//$password = mysqli_real_escape_string($conn, $password);
 
-    // Close the statement and connection
-    $stmt->close();
-    $conn->close();
+// query the database to check if the user exists
+$sql = "SELECT s_id, password FROM students WHERE email = '$email'";
+$result = mysqli_query($conn, $sql);
+if (!$result) {
+  // if the query fails, return an error message
+  $response = array('status' => 'error', 'message' => 'Database query error');
+  echo json_encode($response);
+  exit;
+}
+
+if (mysqli_num_rows($result) == 0) {
+  // if no matching user is found, return an error message
+  $response = array('status' => 'error', 'message' => 'Invalid email address');
+  echo json_encode($response);
+  exit;
+}
+
+// retrieve the user's id and hashed password from the database
+$row = mysqli_fetch_assoc($result);
+$id = $row['s_id'];
+$hashed_password = $row['password'];
+
+// verify the password
+if ($password != $hashed_password) {
+  // if the password doesn't match, return an error message
+  $response = array('status' => 'error', 'message' => 'Invalid password');
+  echo json_encode($response);
+  exit;
 }
 else {
-  // Email or password is not set, display an error message to the user
-  echo "Email or password is missing";
+  $response = array('status' => 'success', 'message' => 'Login for real successful');
+echo json_encode($response);
+
 }
 
+// start the session and store the user's id
+$_SESSION['user_id'] = $id;
 
-$_SESSION['username'] = 'jon';
+// return a success message
+header("Location: ../home.php");
+exit();
+
+?>

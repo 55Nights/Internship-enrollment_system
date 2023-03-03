@@ -1,3 +1,12 @@
+<?php
+session_start();
+if(!isset($_SESSION['email'])) {
+  header("Location: login.php");
+  exit();
+}
+
+$email = $_SESSION['email'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +21,7 @@
     <title>STUDENT | update your profile</title>
 </head>
 <body class="profile-body">
+<h1>Welcome <?php echo $email; ?>!</h1>
     <p class="logo">InternQuest</p>
 </section>
     
@@ -19,7 +29,7 @@
             <h3>Update your profile</h3>
             <hr>
             <section class="about">
-                <form action="" method="post" enctype="multipart/form-data" id="student-form">
+                <form action="./inc/poststudents.php" method="post" enctype="multipart/form-data" id="student-form">
             <div class="contain">
                 <section class="about-info">
                     <h4>About</h4>
@@ -33,10 +43,9 @@
                             <input type="file" name="profilepic" id="ppic" >
         
                         </section>
-                        <input type="email" name="email" id="email" placeholder="email"><br>
+                        <input type="email" name="email" id="email" placeholder="email" <?php echo "value =" .$email; ?> readonly><br>
                         <input type="text" name="location" id="location" value="where are you based" ><br>
                         <input type="text" name="primaryrole" id="prole" placeholder="Primary role e.g software development"><br>
-                        <input type="password" name="password" id="pass" placeholder="password">
                         <input type="text" name="otherroles" id="oroles" placeholder="Other roles e.g software development"><br>
                         <input type="number" name="experience" id="exp" placeholder="Years of experience"> years<br>
                         <textarea name="bio" id="Bio" cols="30" rows="10" placeholder="your Bio" ></textarea><br>
@@ -49,12 +58,44 @@
                     <p>Which industry do you operate in</p>
                 </section>
                 <section class="about-text">
-                    <select name="industry" id="ind">
-                        <option value="computing">Computing and Information Technology</option>
-                        <option value="Housing">Housing</option>
-                        <option value="hospitality">hospitality</option>
-                        
-                    </select>
+                <label for="industry">Industry:</label>
+<select name="industry" id="industry">
+  <option value="IT">IT</option>
+  <option value="Finance">Finance</option>
+  <option value="Marketing">Marketing</option>
+  <option value="Healthcare">Healthcare</option>
+  <option value="Education">Education</option>
+</select>
+
+<label for="job">Job:</label>
+<select name="job" id="job">
+  <optgroup label="IT">
+    <option value="Web Developer">Web Developer</option>
+    <option value="Software Engineer">Software Engineer</option>
+    <option value="Data Analyst">Data Analyst</option>
+  </optgroup>
+  <optgroup label="Finance">
+    <option value="Accountant">Accountant</option>
+    <option value="Financial Analyst">Financial Analyst</option>
+    <option value="Investment Banker">Investment Banker</option>
+  </optgroup>
+  <optgroup label="Marketing">
+    <option value="Marketing Manager">Marketing Manager</option>
+    <option value="Digital Marketing Specialist">Digital Marketing Specialist</option>
+    <option value="Market Research Analyst">Market Research Analyst</option>
+  </optgroup>
+  <optgroup label="Healthcare">
+    <option value="Registered Nurse">Registered Nurse</option>
+    <option value="Physician Assistant">Physician Assistant</option>
+    <option value="Medical Technologist">Medical Technologist</option>
+  </optgroup>
+  <optgroup label="Education">
+    <option value="Teacher">Teacher</option>
+    <option value="Guidance Counselor">Guidance Counselor</option>
+    <option value="Professor">Professor</option>
+  </optgroup>
+</select>
+
                 </section>
             </div>
             <hr>
@@ -91,7 +132,7 @@
                                 <img src="./assets/students/twitter.png" alt="">
                                 <p>Twiter</p>
                             </div>
-                            <input type="url" name="twiter" id="" placeholder="https://">
+                            <input type="url" name="twitter" id="" placeholder="https://">
                         </div>        
                 </section>
             </div>
@@ -130,6 +171,6 @@
             </section>
         </main>
     </div>
-    <script src="./js/student.js"></script>
+    <script src=""></script>
 </body>
 </html>

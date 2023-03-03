@@ -1,5 +1,5 @@
 <?php
-require("./profile-header.php")
+require("./profile-header.php");
 ?>
         <main class="main-home">
             <section class="welcome">
@@ -46,3 +46,5 @@ require("./profile-header.php")
                         </section>
             </section>
         </main>
+</body>
+</html>
