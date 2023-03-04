@@ -1,3 +1,11 @@
+<?php
+session_start();
+echo $_SESSION['email'];
+$
+$mail = $_GET['mail'];
+echo $ma;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

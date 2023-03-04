@@ -18,6 +18,8 @@ $user = $_SESSION['user_id'];
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="student.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <title>STUDENT | update your profile</title>
 </head>
 
